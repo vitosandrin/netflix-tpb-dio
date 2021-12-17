@@ -1,0 +1,111 @@
+
+:root{
+    --red: #E50914;
+    --black: #141414;
+    --white: #ffff;
+    --grey: #AAA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+/* align items = eixo Y // justify content = eixo X */
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 2px;
+    height: 80px;
+    padding: 7px;
+}
+
+/* text decoration none tira as linhas sublinhadas do href de a */
+header nav a {
+    text-decoration: none;
+    color: var(--grey) ;
+    margin-right: 10px;
+    font-size: 18px;
+}
+ /* hover é para quando voce passar o mouse em cima */
+header nav a:hover{
+    color: var(--white);
+}
+
+/* filme principal */
+/*  */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50))100%, url('../assets/images/wallpapertpb3.jpg');
+
+    height: 550px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+.filme-principal .container{
+    margin-left: 3%;
+    margin-bottom: 5%;
+    width: 50%;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filme-principal .descricao{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.botao{
+    background-color:rgba(0,0,0,.50);
+    border: none;
+    color: var(--white);
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    border-radius: 7px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+    border: solid 1px black;
+}
+
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 7px;
+}
